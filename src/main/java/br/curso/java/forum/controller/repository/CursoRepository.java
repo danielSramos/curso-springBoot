@@ -1,4 +1,4 @@
-package br.curso.java.forum.repository;
+package br.curso.java.forum.controller.repository;
 
 import br.curso.java.forum.modelo.Curso;
 import org.springframework.data.jpa.repository.JpaRepository;

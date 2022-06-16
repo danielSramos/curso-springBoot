@@ -1,7 +1,7 @@
 package br.curso.java.forum.controller.dto.form;
 
 import br.curso.java.forum.modelo.Topico;
-import br.curso.java.forum.repository.CursoRepository;
+import br.curso.java.forum.controller.repository.CursoRepository;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotBlank;

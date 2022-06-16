@@ -1,12 +1,12 @@
 package br.curso.java.forum.controller;
 
-import br.curso.java.forum.TopicoRepository;
+import br.curso.java.forum.controller.repository.TopicoRepository;
 import br.curso.java.forum.controller.dto.DetalhesDoTopicoDto;
 import br.curso.java.forum.controller.dto.TopicoDto;
 import br.curso.java.forum.controller.dto.form.AtualizacaoTopicoForm;
 import br.curso.java.forum.controller.dto.form.TopicoForm;
 import br.curso.java.forum.modelo.Topico;
-import br.curso.java.forum.repository.CursoRepository;
+import br.curso.java.forum.controller.repository.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -30,6 +30,12 @@ public class TopicosController {
     TopicoRepository topicoRepository;
     @Autowired
     CursoRepository cursoRepository;
+
+
+    @GetMapping
+    public String hello() {
+        return "Testando autenticação!";
+    }
 
     @GetMapping("/listar")
     @Cacheable(value = "listaDeTopicos")
